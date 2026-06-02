@@ -1,0 +1,413 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="fr" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>URBASPHERE CONTRACTORS | Accueil</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "tertiary-fixed": "#ffdbce",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "inverse-surface": "#313030",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#7f2b00",
+                        "secondary-container": "#dddddd",
+                        "on-surface-variant": "#4c4546",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fcf9f8",
+                        "outline": "#7e7576",
+                        "background": "#fcf9f8",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#e05814",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-container": "#606161",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f0eded",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "primary": "#000000",
+                        "on-tertiary-fixed": "#370e00",
+                        "secondary": "#5d5f5f",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "surface": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-container": "#370e00",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb599",
+                        "primary-container": "#1b1b1b",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-primary-container": "#848484",
+                        "on-background": "#1c1b1b",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-high": "#eae7e7",
+                        "inverse-primary": "#c6c6c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Anton"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Anton"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "display-hero": ["Anton"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Anton"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["64px", {"lineHeight": "110%", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "160%", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "120%", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "140%", "letterSpacing": "0.1em", "fontWeight": "800"}],
+                        "display-hero": ["96px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "100%", "letterSpacing": "0.2em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["48px", {"lineHeight": "110%", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "160%", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .blueprint-grid {
+            background-image: 
+                linear-gradient(to right, rgba(126, 117, 118, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(126, 117, 118, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .structural-line-h {
+            height: 0.5px;
+            background-color: rgba(126, 117, 118, 0.3);
+            width: 100%;
+        }
+        .structural-line-v {
+            width: 0.5px;
+            background-color: rgba(126, 117, 118, 0.3);
+            height: 100%;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .transition-cubic {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TOP NAVIGATION BAR -->
+<header class="site-header fixed top-0 left-0 right-0 z-50">
+<div class="site-header-inner flex justify-between items-center w-full px-margin-mobile lg:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="flex items-center gap-2 shrink-0" href="acceuil.html" aria-label="URBASPHERE CONTRACTORS - Accueil">
+<img alt="URBASPHERE CONTRACTORS" class="h-12 w-auto object-contain" src="assets/images/logo-black.png">
+</a>
+<nav class="hidden lg:flex items-center gap-8" aria-label="Navigation principale">
+<a class="site-nav-link is-active font-label-caps text-label-caps uppercase" href="acceuil.html" aria-current="page">Accueil</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase" href="a propos.html">À propos</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase" href="services.html">Services</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase" href="realisations.html">Réalisations</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase" href="contact.html">Contact</a>
+</nav>
+<a class="hidden lg:inline-flex bg-primary text-white font-label-caps text-label-caps px-6 py-3 uppercase tracking-wider hover:opacity-80 transition-all items-center gap-2 group" href="contact.html">
+Demander un devis
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+</a>
+<button class="mobile-menu-toggle lg:hidden flex flex-col justify-center items-center gap-[5px] w-11 h-11 border border-black" type="button" data-mobile-menu-toggle aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+</button>
+</div>
+<nav id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-black/10" data-mobile-menu aria-label="Navigation mobile">
+<div>
+<div class="px-margin-mobile py-4 flex flex-col">
+<a class="site-nav-link is-active font-label-caps text-label-caps uppercase py-4 border-b border-black/10" href="acceuil.html" aria-current="page">Accueil</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase py-4 border-b border-black/10" href="a propos.html">À propos</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase py-4 border-b border-black/10" href="services.html">Services</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase py-4 border-b border-black/10" href="realisations.html">Réalisations</a>
+<a class="site-nav-link font-label-caps text-label-caps uppercase py-4 border-b border-black/10" href="contact.html">Contact</a>
+<a class="mt-5 bg-primary text-white font-label-caps text-label-caps px-6 py-4 uppercase tracking-wider inline-flex justify-center items-center gap-2" href="contact.html">
+Demander un devis
+<span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="">
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center blueprint-grid overflow-hidden border-b border-outline/20 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="absolute inset-0 z-0">
+<img alt="A grand architectural structure showing raw concrete pillars and steel beams against a clear sky." class="w-full h-full object-cover grayscale opacity-20" src="https://lh3.googleusercontent.com/aida/AP1WRLvatzpXOKFOogZIxXRUKNxw3vLZyonOyhzMYcxlQxsbp6ch9hH_9S02yZGereNb6wzLpZ-28Xy-seydPYW6nQtWEzzSDvr9NYApSreo9jpoLtcSU6bME_nzn_DTMejPV3E_VEESONJqOaDoH4wed3ADBpfaKwMObvVIDUpFa9YDH-LUNFwpSP7kpNCK_lh6ulrGUSBbhn8scHcS3I6ijs2f0aVRLucb482W7-9tUWWPBq-vr1rBydt63jQ">
+</div>
+<!-- Structural Vertical Lines -->
+<div class="absolute left-margin-desktop top-0 bottom-0 structural-line-v hidden md:block"></div>
+<div class="absolute right-margin-desktop top-0 bottom-0 structural-line-v hidden md:block"></div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center gap-16 py-32">
+<div class="md:w-3/5">
+<div class="w-16 h-1 bg-on-tertiary-container mb-6"></div>
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero uppercase text-primary leading-tight mb-8">
+                        CONSTRUISONS DES PROJETS <span class="text-outline">SOLIDES</span>, DURABLES ET MAITRISES.
+                    </h1>
+<p class="font-body-lg text-body-lg max-w-xl mb-10 text-secondary">
+                        Entreprise marocaine spécialisée dans les travaux industriels, publics et du bâtiment. Nous transformons les visions architecturales en infrastructures pérennes.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-white font-label-caps text-label-caps px-10 py-5 uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-on-tertiary-container transition-colors group" href="services.html">
+                            Découvrir nos services
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="border border-primary text-primary font-label-caps text-label-caps px-10 py-5 uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all" href="contact.html">
+                            Nous contacter
+                        </a>
+</div>
+</div>
+<div class="md:w-2/5 relative">
+<div class="border border-primary p-2">
+<img alt="A close-up perspective of a modern skyscraper facade featuring geometric glass panels and reinforced concrete frames." class="w-full h-auto object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUpqQrTBESUoiMN-0hyZmQnPf9Ub1lJRU3G5_Cvjg80_7VRSwMjL2wgJjPgN8gj96sgaHTAJtvfxaVPmXkQw1rX_RA4mtjk50mB9ZSFFa8DwdJjp7rDIDA5YMr38e_ivwIZleQQGT_CmeJFIDWBM-JR0Zbd0_Y0hiu2zX-sp-olc9sjvD2EEj_Bpcc3IjgyHKU7d_iB0btD9_gKQJqq3R6eXcwyq8oC8SuPZCt7L50H8gPKyvQ5GXDULhJ9ac5sgYdy1qtrHxYKKk">
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary text-white p-8 hidden lg:block">
+<p class="font-headline-md text-headline-md leading-none mb-2">15+</p>
+<p class="font-label-caps text-label-caps uppercase">Années d'expertise</p>
+</div>
+</div>
+</div>
+</section>
+<!-- KEY STATISTICS (Enriched from SCREEN_20) -->
+<section class="py-24 bg-surface-container-low border-b border-outline/10 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-gutter">
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+<span class="font-headline-lg text-headline-md text-primary mb-2">150+</span>
+<div class="w-8 h-0.5 bg-on-tertiary-container mb-4"></div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Projets terminés</span>
+</div>
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+<span class="font-headline-lg text-headline-md text-primary mb-2">12</span>
+<div class="w-8 h-0.5 bg-on-tertiary-container mb-4"></div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Années d'expertise</span>
+</div>
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+<span class="font-headline-lg text-headline-md text-primary mb-2">85</span>
+<div class="w-8 h-0.5 bg-on-tertiary-container mb-4"></div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Équipes dédiées</span>
+</div>
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+<span class="font-headline-lg text-headline-md text-primary mb-2">100%</span>
+<div class="w-8 h-0.5 bg-on-tertiary-container mb-4"></div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Satisfaction client</span>
+</div>
+</div>
+</div>
+</section>
+<!-- NOS DOMAINES D'INTERVENTION (Enriched from SCREEN_20) -->
+<section class="py-32 bg-white relative transition-all duration-1000 opacity-100 translate-y-0">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase mb-4 block">Expertise métier</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase text-primary leading-tight">NOS DOMAINES D'INTERVENTION</h2>
+</div>
+<div class="hidden md:block structural-line-h w-1/3 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[4/5] relative">
+<img alt="Travaux Industriels" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl1pawBK1FgWZTqWIO9azHr3DUlke2-qMHP4NBZFayhl9EUBEEfE9Z5RROEcS3WnHHOppgNOvdIHKnXoS7MGAeXV7mqONsShtYiXDbvaaFH0-9X-9ppDRTlylM5Ugd68pGwoNH19pxiS3KHGPQmR-UHUEKuFXqiHPOLLNR60OZauc5i-wYhwicgS4oTarsrEgfv5Sugt4MbT__tQOn49XmKal6rg1axXc8wMm7jtog9FwCW1OPq9sbJkT0wEDePcv3c4xMs17oG8I">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-4">Travaux Industriels</h3>
+<p class="text-secondary font-body-md mb-6 line-clamp-3">Solutions globales pour les infrastructures de production, hangars et sites techniques complexes.</p>
+<a class="font-label-caps text-label-caps text-primary flex items-center gap-2 group-hover:text-on-tertiary-container transition-colors" href="services.html#industriels">
+                        VOIR PLUS <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[4/5] relative">
+<img alt="Travaux Publics" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSG8e_RGUBTmLtqehzthWtqG_3wglSekUXhxKXzeYNNfZUi7UXHLb8hmWrI1Ho_0UugscE2o8MIahvfNyjNtSmZyM8eV4K0HPqUte9ykq6C8_nCj12e9zMeNJhjQHcKGPYL1yP6xCkt4VBdq_7-jbSSpnnFRu4SMeb8gQedrFPCIl8GuoT6FxdV1QB0SujxN_f0h3pULFssz514an6x_xcj4yKFTliESO8T7j8vnh9CK1B5UqHOox9CSA-jP1iquA4TY45rVxDlbc">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-4">Travaux Publics</h3>
+<p class="text-secondary font-body-md mb-6 line-clamp-3">Aménagement urbain, routes et ouvrages d'art au service du développement des territoires.</p>
+<a class="font-label-caps text-label-caps text-primary flex items-center gap-2 group-hover:text-on-tertiary-container transition-colors" href="services.html#publics">
+                        VOIR PLUS <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[4/5] relative">
+<img alt="Bâtiment" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWPtmlvH5X_GaWjrprAhbsY0C5yvknDbXzBS0U_F1VYAIg-vRI47pubnqLMrsGlZDzSTjJ_-VQGSjo16-379lncNlwPAILG6rH-5AQv-0nb5eRV2iGOCG-8mcBn7B0pB9pwW7JpAKek5gXkf6AaztYGnvTZ5pakA-IML1QHoU29n2-LxoHUKPIWIcke14w4y7Bd0FpeDVDGO8u-oOgEGjMenu3UXjnzhFLVIlYcfaBwIZb8xMYOa8hUFc7wJtyosJomOB21NDMfNk">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-4">Bâtiment</h3>
+<p class="text-secondary font-body-md mb-6 line-clamp-3">Construction résidentielle et tertiaire alliant modernité architecturale et durabilité structurelle.</p>
+<a class="font-label-caps text-label-caps text-primary flex items-center gap-2 group-hover:text-on-tertiary-container transition-colors" href="services.html#batiment">
+                        VOIR PLUS <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- POURQUOI NOUS CHOISIR ? (Enriched from SCREEN_20) -->
+<section class="py-32 bg-surface-container overflow-hidden transition-all duration-1000 opacity-100 translate-y-0">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-20">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase mb-4 block">Nos engagements</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase text-primary">POURQUOI NOUS CHOISIR ?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative">
+<!-- Vertical Divider Lines for Desktop -->
+<div class="absolute left-1/4 top-0 bottom-0 structural-line-v hidden lg:block"></div>
+<div class="absolute left-2/4 top-0 bottom-0 structural-line-v hidden lg:block"></div>
+<div class="absolute left-3/4 top-0 bottom-0 structural-line-v hidden lg:block"></div>
+<!-- Block 1 -->
+<div class="p-8 border-b md:border-b-0 md:border-r lg:border-r-0 border-outline/20">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6">engineering</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 uppercase">Expertise Technique</h4>
+<p class="text-secondary font-body-md">Une maîtrise parfaite des normes de construction et des contraintes structurelles les plus exigeantes.</p>
+</div>
+<!-- Block 2 -->
+<div class="p-8 border-b md:border-b-0 lg:border-r-0 border-outline/20">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6">precision_manufacturing</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 uppercase">Équipement de pointe</h4>
+<p class="text-secondary font-body-md">Un parc matériel moderne et performant pour garantir la qualité et l'efficacité sur chaque chantier.</p>
+</div>
+<!-- Block 3 -->
+<div class="p-8 border-b md:border-b-0 md:border-r lg:border-r-0 border-outline/20">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6">schedule</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 uppercase">Respect des délais</h4>
+<p class="text-secondary font-body-md">Une planification rigoureuse pour une livraison conforme aux engagements temporels de nos clients.</p>
+</div>
+<!-- Block 4 -->
+<div class="p-8 border-outline/20">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6">health_and_safety</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 uppercase">Engagement Sécurité</h4>
+<p class="text-secondary font-body-md">La sécurité de nos équipes et de nos partenaires est notre priorité absolue sur tous nos sites.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA (Enriched from SCREEN_20) -->
+<section class="bg-primary text-white py-32 relative overflow-hidden transition-all duration-1000 opacity-100 translate-y-0">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-full h-full border-r-[100px] border-b-[100px] border-white/20 -rotate-45 translate-x-1/2"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-12 tracking-tight">PRET A BATIR VOTRE PROCHAIN PROJET ?</h2>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto mb-16 text-white/70">
+                Discutons de vos ambitions et transformons vos idées en structures durables. Notre bureau d'études vous accompagne dès la genèse de votre projet.
+            </p>
+<a class="bg-white text-primary font-label-caps text-label-caps px-12 py-6 uppercase tracking-widest hover:bg-on-tertiary-container hover:text-white transition-all inline-flex items-center gap-4 group" href="contact.html">
+                CONTACTEZ-NOUS
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-inverse-surface dark:bg-black text-white py-16">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1 space-y-6">
+<a href="acceuil.html" aria-label="URBASPHERE CONTRACTORS - Accueil">
+<img alt="URBASPHERE CONTRACTORS" class="h-14 w-auto object-contain" src="assets/images/logo-white.png">
+</a>
+<p class="text-outline-variant font-body-md pr-4">Leader dans la construction industrielle et publique au Maroc. Excellence, Durabilité, Maîtrise.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline/30 flex items-center justify-center hover:border-on-tertiary-container transition-colors" href="realisations.html" aria-label="Voir nos réalisations"><span class="material-symbols-outlined text-sm" aria-hidden="true">public</span></a>
+<a class="w-10 h-10 border border-outline/30 flex items-center justify-center hover:border-on-tertiary-container transition-colors" href="contact.html" aria-label="Contacter notre équipe"><span class="material-symbols-outlined text-sm" aria-hidden="true">groups</span></a>
+</div>
+</div>
+<div class="md:col-span-1 footer-column">
+<h5 class="font-label-caps text-label-caps uppercase mb-8 tracking-widest text-on-tertiary-container">Expertises</h5>
+<ul class="space-y-4">
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="services.html#industriels">Travaux industriels</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="services.html#publics">Travaux publics</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="services.html#batiment">Bâtiment</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="services.html">Génie Civil</a></li>
+</ul>
+</div>
+<div class="md:col-span-1 footer-column">
+<h5 class="font-label-caps text-label-caps uppercase mb-8 tracking-widest text-on-tertiary-container">Société</h5>
+<ul class="space-y-4">
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="a propos.html">À propos</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="realisations.html">Nos réalisations</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="services.html">Nos engagements</a></li>
+<li><a class="text-outline-variant hover:text-white hover:translate-x-1 transition-all inline-block font-body-md" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-1 footer-column">
+<h5 class="font-label-caps text-label-caps uppercase mb-8 tracking-widest text-on-tertiary-container">Contact</h5>
+<p class="text-outline-variant mb-6 font-body-md">Inscrivez-vous pour recevoir nos actualités projets.</p>
+<form class="flex border-b border-outline/30 pb-2" action="contact.html">
+<label class="sr-only" for="footer-email">Votre email</label>
+<input id="footer-email" class="bg-transparent border-none text-white font-label-caps text-label-caps w-full focus:ring-0 placeholder:text-outline/40" placeholder="VOTRE EMAIL" type="email">
+<button class="text-on-tertiary-container" type="submit" aria-label="Envoyer"><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<p class="font-label-caps text-label-caps text-outline-variant">© 2024 URBASPHERE CONTRACTORS. TOUS DROITS RESERVES.</p>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-outline-variant hover:text-white uppercase" href="contact.html">Mentions légales</a>
+<a class="font-label-caps text-label-caps text-outline-variant hover:text-white uppercase" href="contact.html">Confidentialité</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal interaction on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('main > section').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+
+
+<script src="assets/js/main.js"></script>
+</body></html>
