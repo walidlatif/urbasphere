@@ -31,20 +31,41 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-inverse-surface py-16 text-white">
-      <div className="container-shell grid grid-cols-1 gap-gutter md:grid-cols-4">
-        <div className="space-y-6">
-          <Link href="/" aria-label="URBASPHERE CONTRACTORS - Accueil">
-            <Image src="/images/logo-white.png" alt="URBASPHERE CONTRACTORS" width={204} height={56} className="h-14 w-auto" />
+    <footer className="footer-industrial relative overflow-hidden text-white">
+      <div className="footer-technical-lines" aria-hidden="true" />
+
+      <div className="container-shell relative z-10">
+        <div className="footer-cta grid gap-8 border-b border-white/10 py-12 md:grid-cols-[1fr_auto] md:items-end md:py-16">
+          <div className="max-w-3xl">
+            <div className="mb-5 h-1 w-16 bg-on-tertiary-container" />
+            <h2 className="font-anton text-[clamp(40px,8vw,88px)] uppercase leading-none">
+              CONSTRUISONS VOTRE PROCHAIN PROJET
+            </h2>
+            <p className="body-copy mt-5 max-w-xl text-white/65">
+              Un partenaire fiable pour vos travaux industriels, publics et bâtiment.
+            </p>
+          </div>
+          <Link
+            className="label-caps motion-surface group inline-flex w-full items-center justify-center gap-4 bg-white px-8 py-5 text-black hover:bg-on-tertiary-container hover:text-white md:w-auto"
+            href="/contact"
+          >
+            CONTACTEZ-NOUS <span className="motion-arrow" aria-hidden="true">→</span>
           </Link>
-          <p className="font-hanken text-body-md text-outline-variant">
-            Leader dans la construction industrielle et publique au Maroc. Excellence, Durabilité, Maîtrise.
-          </p>
-          <div className="flex gap-4">
+        </div>
+
+        <div className="grid gap-10 border-b border-white/10 py-12 md:grid-cols-[1.35fr_0.8fr_1fr] md:gap-12 md:py-16">
+          <div className="max-w-md space-y-6">
+            <Link className="inline-block" href="/" aria-label="URBASPHERE CONTRACTORS - Accueil">
+              <Image src="/images/logo-white.png" alt="URBASPHERE CONTRACTORS" width={204} height={56} className="h-14 w-auto" />
+            </Link>
+            <p className="body-copy text-white/62">
+              Entreprise marocaine spécialisée dans les travaux industriels, publics et du bâtiment.
+            </p>
+            <div className="flex gap-3">
             {socialLinks.map((social) => (
               <Link
                 key={social.label}
-                className="motion-surface flex h-10 w-10 items-center justify-center border border-outline/30 text-outline-variant hover:border-on-tertiary-container hover:text-on-tertiary-container"
+                className="motion-surface flex h-11 w-11 items-center justify-center border border-white/15 bg-white/[0.03] text-white/60 hover:border-on-tertiary-container hover:bg-on-tertiary-container hover:text-white"
                 href={social.href}
                 aria-label={social.label}
                 target="_blank"
@@ -55,49 +76,46 @@ export default function Footer() {
                 </svg>
               </Link>
             ))}
+            </div>
+          </div>
+
+          <nav className="footer-panel md:border-l md:border-white/10 md:pl-10" aria-label="Navigation du pied de page">
+            <h3 className="label-caps mb-7 text-on-tertiary-container">Navigation</h3>
+            <ul className="space-y-4 font-hanken text-body-md">
+              <li><Link className="footer-link" href="/">Accueil</Link></li>
+              <li><Link className="footer-link" href="/services">Domaines</Link></li>
+              <li><Link className="footer-link" href="/a-propos">Pourquoi nous</Link></li>
+              <li><Link className="footer-link" href="/contact">Contact</Link></li>
+            </ul>
+          </nav>
+
+          <div className="footer-panel md:border-l md:border-white/10 md:pl-10">
+            <h3 className="label-caps mb-7 text-on-tertiary-container">Contact</h3>
+            <address className="space-y-5 not-italic">
+              <a className="footer-contact-line" href="mailto:contact@urbasphere.ma">
+                <span>Email</span>
+                contact@urbasphere.ma
+              </a>
+              <a className="footer-contact-line" href="tel:+212522000000">
+                <span>Téléphone</span>
+                +212 522 00 00 00
+              </a>
+              <p className="footer-contact-line">
+                <span>Adresse</span>
+                24 Boulevard d'Anfa, Quartier Gauthier, 20250 Casablanca, Maroc
+              </p>
+            </address>
           </div>
         </div>
-        <div className="footer-column">
-          <h5 className="label-caps mb-8 text-on-tertiary-container">Expertises</h5>
-          <ul className="space-y-4 font-hanken text-body-md">
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/services#industriels">Travaux industriels</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/services#publics">Travaux publics</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/services#batiment">Bâtiment</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/services">Génie Civil</Link></li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h5 className="label-caps mb-8 text-on-tertiary-container">Société</h5>
-          <ul className="space-y-4 font-hanken text-body-md">
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/a-propos">À propos</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/realisations">Nos réalisations</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/services">Nos engagements</Link></li>
-            <li><Link className="motion-surface inline-block text-outline-variant hover:translate-x-1 hover:text-white" href="/contact">Contact</Link></li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h5 className="label-caps mb-8 text-on-tertiary-container">Contact</h5>
-          <p className="mb-6 font-hanken text-body-md text-outline-variant">Inscrivez-vous pour recevoir nos actualités projets.</p>
-          <form className="flex border-b border-outline/30 pb-2" action="/contact">
-            <label className="sr-only" htmlFor="footer-email">Votre email</label>
-            <input id="footer-email" className="label-caps w-full border-none bg-transparent text-white outline-none placeholder:text-outline/40 focus:ring-0" placeholder="VOTRE EMAIL" type="email" />
-            <button className="text-on-tertiary-container" type="submit" aria-label="Envoyer">›</button>
-          </form>
-        </div>
-      </div>
-      <div className="container-shell mt-20 flex flex-col items-center justify-between gap-4 border-t border-outline/10 pt-8 text-center md:flex-row md:text-left">
-        <div className="space-y-2">
-          <p className="label-caps text-outline-variant">© 2024 URBASPHERE CONTRACTORS. TOUS DROITS RESERVES.</p>
-          <p className="label-caps text-outline-variant">
+
+        <div className="flex flex-col gap-3 py-7 text-center md:flex-row md:items-center md:justify-between md:text-left">
+          <p className="label-caps text-white/45">© 2026 URBASPHERE CONTRACTORS. Tous droits réservés.</p>
+          <p className="label-caps text-white/45">
             Designed &amp; developed by{" "}
-            <a className="text-on-tertiary-container hover:text-white" href="https://triverseagency.com/" target="_blank" rel="noreferrer">
-              Triverseagency
+            <a className="text-white/70 transition-colors hover:text-on-tertiary-container" href="https://triverseagency.com/" target="_blank" rel="noreferrer">
+              Triverse Agency
             </a>
           </p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-8">
-          <Link className="label-caps text-outline-variant hover:text-white" href="/contact">Mentions légales</Link>
-          <Link className="label-caps text-outline-variant hover:text-white" href="/contact">Confidentialité</Link>
         </div>
       </div>
     </footer>
