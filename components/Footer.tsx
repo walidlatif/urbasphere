@@ -86,7 +86,15 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-shell mt-20 flex flex-col items-center justify-between gap-4 border-t border-outline/10 pt-8 text-center md:flex-row md:text-left">
-        <p className="label-caps text-outline-variant">© 2024 URBASPHERE CONTRACTORS. TOUS DROITS RESERVES.</p>
+        <div className="space-y-2">
+          <p className="label-caps text-outline-variant">© 2024 URBASPHERE CONTRACTORS. TOUS DROITS RESERVES.</p>
+          <p className="label-caps text-outline-variant">
+            Designed &amp; developed by{" "}
+            <a className="text-on-tertiary-container hover:text-white" href="https://triverseagency.com/" target="_blank" rel="noreferrer">
+              Triverseagency
+            </a>
+          </p>
+        </div>
         <div className="flex flex-wrap justify-center gap-8">
           <Link className="label-caps text-outline-variant hover:text-white" href="/contact">Mentions légales</Link>
           <Link className="label-caps text-outline-variant hover:text-white" href="/contact">Confidentialité</Link>
