@@ -23,9 +23,9 @@ export default function ContactPage() {
           <div className="space-y-12 border-l-4 border-primary pl-8">
             <Info label="Siège Social" title="Casablanca, Maroc" text="24 Boulevard d'Anfa, Quartier Gauthier, 20250" />
             <Info label="Communication Digitale" title="contact@urbasphere.ma" href="mailto:contact@urbasphere.ma" />
-            <Info label="Ligne Directe" title="+212 522 00 00 00" href="tel:+212522000000" />
+            <Info label="Ligne Directe" title="0664603264" href="tel:+212664603264" />
           </div>
-          <a className="motion-surface group relative block overflow-hidden border border-black bg-white p-8 hover:bg-black hover:text-white" href="https://wa.me/212522000000">
+          <a className="motion-surface group relative block overflow-hidden border border-black bg-white p-8 hover:bg-black hover:text-white" href="https://wa.me/212664603264">
             <div className="relative z-10 flex items-center justify-between gap-6">
               <div>
                 <p className="label-caps mb-2 text-on-tertiary-container">Réponse Rapide</p>
@@ -51,7 +51,7 @@ export default function ContactPage() {
               <Field label="Email Professionnel" placeholder="CONTACT@ENTREPRISE.MA" type="email" />
             </div>
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-              <Field label="Téléphone" placeholder="+212 600 00 00 00" type="tel" />
+              <Field label="Téléphone" placeholder="0664603264" type="tel" />
               <div className="space-y-2">
                 <label className="label-caps block text-secondary">Type de Projet</label>
                 <select className="w-full border-0 border-b border-black bg-transparent py-4 font-hanken text-body-md outline-none focus:border-on-tertiary-container focus:ring-0">

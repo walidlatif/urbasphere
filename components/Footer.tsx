@@ -47,8 +47,8 @@ export default function Footer() {
               <a className="footer-contact-link" href="mailto:contact@urbasphere.ma">
                 contact@urbasphere.ma
               </a>
-              <a className="footer-contact-link" href="tel:+212522000000">
-                +212 522 00 00 00
+              <a className="footer-contact-link" href="tel:+212664603264">
+                0664603264
               </a>
               <p>Casablanca, Maroc</p>
             </address>
